@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="master.ControllerForAddMaster">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: gray;">
+         <children>
+            <Button id="buttonOk" fx:id="buttonOk" layoutX="319.0" layoutY="348.0" mnemonicParsing="false" style="-fx-background-color: Pink;" onAction="#setButtonOK" text="ОК" />
+            <TextField id="text_name" fx:id="text_name" layoutX="185.0" layoutY="91.0" onAction="#setButtonOK" />
+            <TextField id="text_surname" fx:id="text_surname" layoutX="185.0" layoutY="140.0" onAction="#setButtonOK" />
+            <TextField id="text_experience" fx:id="text_experience" layoutX="185.0" layoutY="192.0" onAction="#setButtonOK" />
+            <TextField id="text_salary" fx:id="text_salary" layoutX="185.0" layoutY="242.0" onAction="#setButtonOK" />
+            <Label layoutX="42.0" layoutY="96.0" text="Имя">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Label>
+            <Label layoutX="41.0" layoutY="197.0" text="Стаж работы">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Label>
+            <Label layoutX="41.0" layoutY="247.0" text="Зарплата">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="145.0" text="Фамилия">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="33.0" text="Добавление мастера" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="293.0" text="Сфера деятельности">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="text_field" layoutX="185.0" layoutY="288.0" prefWidth="150.0" />
+            <Button id="buttonOk" fx:id="buttonBack" layoutX="236.0" layoutY="348.0" mnemonicParsing="false" style="-fx-background-color: Pink;" onAction="#setbuttonBack" text="Назад" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

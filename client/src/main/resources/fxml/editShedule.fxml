@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shedule.ControllerForEditShedule">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="1200.0" style="-fx-background-color: gray;">
+         <children>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="614.0" layoutY="441.0" mnemonicParsing="false" onAction="#setButtonBack" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Назад" />
+            <Button id="buttonEdit" fx:id="buttonEdit" layoutX="454.0" layoutY="441.0" mnemonicParsing="false" onAction="#setButtonEdit" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Редактировать" />
+            <Label layoutX="117.0" layoutY="338.0" text="Услуга" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="445.0" layoutY="341.0" text="Дата" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="445.0" layoutY="385.0" text="Время" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="text_phone" fx:id="text_time" layoutX="502.0" layoutY="380.0" prefHeight="26.0" prefWidth="175.0" promptText="HH:MM" />
+            <TableView id="table" fx:id="table" layoutX="115.0" layoutY="30.0" prefHeight="287.0" prefWidth="567.0">
+              <columns>
+                  <TableColumn id="firstnameColumn" fx:id="serviceColumn" prefWidth="150.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                <TableColumn id="nameColumn" fx:id="masterColumn" prefWidth="150.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+                  <TableColumn id="serviceColumn" fx:id="dateColumn" prefWidth="149.0" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn id="dateColumn" fx:id="timeColumn" prefWidth="116.0" style="-fx-background-color: mistyrose;" text="Время" />
+              </columns>
+            </TableView>
+            <ComboBox id="text_service" fx:id="text_service" layoutX="187.0" layoutY="330.0" prefHeight="31.0" prefWidth="187.0" />
+            <Label layoutX="115.0" layoutY="385.0" text="Мастер" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox id="text_service" fx:id="text_master" layoutX="187.0" layoutY="377.0" prefHeight="31.0" prefWidth="187.0" />
+            <DatePicker fx:id="text_date" layoutX="502.0" layoutY="333.0" promptText="YYY-MM-DD" />
+         </children></AnchorPane>
+   </children>
+</GridPane>

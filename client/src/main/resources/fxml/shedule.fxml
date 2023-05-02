@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shedule.Shedules">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: gray;" GridPane.rowIndex="1">
+         <children>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="734.0" layoutY="443.0" mnemonicParsing="false" onAction="#setbuttonBack" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Назад" />
+            <TableView id="table" fx:id="table" layoutX="159.0" layoutY="28.0" prefHeight="370.0" prefWidth="618.0">
+              <columns>
+                  <TableColumn fx:id="serviceColumn" prefWidth="175.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                <TableColumn id="nameColumn" fx:id="masterColumn" prefWidth="175.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+                  <TableColumn id="serviceColumn" fx:id="dateColumn" prefWidth="180.0" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn id="dateColumn" fx:id="timeColumn" prefWidth="85.0" style="-fx-background-color: mistyrose;" text="Время" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ControllerForAddClient">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="468.0" prefWidth="850.0" style="-fx-background-color: Gray;">
+         <children>
+            <Label layoutX="297.0" prefHeight="60.0" prefWidth="235.0" text="Добавить клиента" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font></Label>
+            <ComboBox id="text_service" fx:id="text_service" layoutX="200.0" layoutY="122.0" onAction="#setFilter" prefHeight="31.0" prefWidth="150.0" />
+            <Label layoutX="26.0" layoutY="123.0" prefHeight="31.0" prefWidth="222.0" text="Поиск процедуры">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Button id="buttonSubmit" fx:id="buttonSubmit" layoutX="427.0" layoutY="477.0" mnemonicParsing="false" onAction="#setButtonSubmit" prefHeight="31.0" style="-fx-background-color: Pink;" prefWidth="187.0" text="Записать">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="499.0" layoutY="57.0" prefHeight="27.0" prefWidth="195.0" text="Свободные места" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="630.0" layoutY="477.0" mnemonicParsing="false" onAction="#setbuttonBack" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: Pink;" text="Назад">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="table" layoutX="379.0" layoutY="103.0" prefHeight="350.0" prefWidth="435.0">
+              <columns>
+                <TableColumn fx:id="serviceColumn" prefWidth="93.19998168945312" style="-fx-background-color: mistyrose;" text="Услуга" />
+                <TableColumn fx:id="masterColumn" prefWidth="90.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+                  <TableColumn fx:id="dateColumn" prefWidth="72.80001831054688" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn fx:id="timeColumn" prefWidth="81.60003662109375" style="-fx-background-color: mistyrose;" text="Время" />
+                  <TableColumn fx:id="priceColumn" prefWidth="90.20001220703125" style="-fx-background-color: mistyrose;" text="Цена" />
+              </columns>
+            </TableView>
+            <Button id="buttonSubmit" fx:id="buttonShowPrice" layoutX="99.0" layoutY="378.0" mnemonicParsing="false" onAction="#setButtonShowPrice" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: Pink;" text="Прайслист">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="text_surname" layoutX="196.0" layoutY="171.0" prefHeight="26.0" prefWidth="157.0" />
+            <TextField fx:id="text_name" layoutX="197.0" layoutY="220.0" prefHeight="26.0" prefWidth="158.0" />
+            <TextField fx:id="text_phone" layoutX="199.0" layoutY="264.0" prefHeight="26.0" prefWidth="158.0" promptText="+375(__)_______" />
+            <Label layoutX="26.0" layoutY="172.0" prefHeight="22.0" prefWidth="95.0" text="Фамилия">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="221.0" prefHeight="22.0" prefWidth="63.0" text="Имя">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="265.0" text="Телефон">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</GridPane>

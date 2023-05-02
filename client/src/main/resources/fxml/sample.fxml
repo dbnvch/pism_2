@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Label alignment="CENTER" layoutX="186.0" layoutY="43.0" prefHeight="146.0" prefWidth="186.0" text="KRASIVO." textFill="#7d5f6f" underline="true">
+               <font>
+                  <Font name="Dubai Medium" size="32.0" />
+               </font></Label>
+            <TextField id="text_login" fx:id="text_login" layoutX="154.0" layoutY="196.0" onAction="#setInf" prefHeight="40.0" prefWidth="233.0" promptText="логин">
+               <font>
+                  <Font name="Dubai Medium" size="15.0" />
+               </font></TextField>
+            <PasswordField id="text_password" fx:id="text_password" layoutX="154.0" layoutY="250.0" onAction="#setInf" prefHeight="40.0" prefWidth="233.0" promptText="пароль">
+               <font>
+                  <Font name="Dubai Medium" size="15.0" />
+               </font></PasswordField>
+            <Button id="btn_signIn" fx:id="btn_signIn" layoutX="90.0" layoutY="380.0" mnemonicParsing="false" onAction="#signIn" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: Pink;" text="Регистрация" textFill="#363131" underline="true">
+               <font>
+                  <Font name="Dubai Medium" size="11.0" />
+               </font></Button>
+            <Button id="btn_logIn" fx:id="btn_logIn" layoutX="290.0" layoutY="380.0" mnemonicParsing="false" onAction="#logIn" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: pink;" text="Авторизация" textFill="#282626" underline="true">
+               <font>
+                  <Font name="Dubai Medium" size="11.0" />
+               </font></Button>
+            <Label alignment="BOTTOM_LEFT" layoutX="181.0" layoutY="72.0" prefHeight="27.0" prefWidth="111.0" text="СТУДИЯ КРАСОТЫ" textFill="#2f2d2f">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+
+            <Button id="btn_signIn" fx:id="buttonPort" layoutX="21.0" layoutY="29.0" mnemonicParsing="false" onAction="#port" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: MistyRose;" text="Подключение" textFill="#363131">
+               <font>
+                  <Font name="Dubai Medium" size="11.0" />
+               </font>
+            </Button>
+
+            <Button id="btn_signIn" fx:id="buttonClose" layoutX="405.0" layoutY="458.0" mnemonicParsing="false" onAction="#onClose" prefHeight="27.0" prefWidth="74.0" style="-fx-background-color: MistyRose;" text="Выход" textFill="#363131">
+               <font>
+                  <Font name="Dubai Medium" size="11.0" />
+               </font>
+            </Button>
+
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

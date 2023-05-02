@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shedule.ControllerForAddShedule">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: Gray;">
+         <children>
+            <Button id="buttonOk" fx:id="buttonOk" layoutX="309.0" layoutY="345.0" mnemonicParsing="false" onAction="#setButtonOK" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: Pink;" text="ОК" />
+            <Label layoutX="37.0" layoutY="111.0" prefHeight="42.0" prefWidth="78.0" text="Мастер">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label layoutX="36.0" layoutY="216.0" prefHeight="31.0" prefWidth="78.0" text="Дата">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label layoutX="34.0" layoutY="263.0" prefHeight="42.0" prefWidth="94.0" text="Время">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label layoutX="27.0" layoutY="22.0" prefHeight="27.0" prefWidth="367.0" text="Добавление свободного окошка" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <ComboBox id="text_service" fx:id="text_service" layoutX="130.0" layoutY="70.0" prefHeight="31.0" prefWidth="187.0" />
+            <Button fx:id="buttonBack" layoutX="223.0" layoutY="345.0" mnemonicParsing="false" onAction="#setbuttonBack" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: Pink;" text="Назад" />
+            <Label layoutX="36.0" layoutY="71.0" prefHeight="23.0" prefWidth="93.0" text="Услуга">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="text_date" layoutX="132.0" layoutY="218.0" prefHeight="31.0" prefWidth="187.0" promptText="YYYY-MM-DD" />
+            <TextField id="text_name" fx:id="text_time" layoutX="132.0" layoutY="266.0" prefHeight="31.0" prefWidth="187.0" promptText="HH:MM" />
+            <ComboBox id="text_service" fx:id="text_master" layoutX="130.0" layoutY="117.0" prefHeight="31.0" prefWidth="187.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

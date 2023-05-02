@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ControllerForEditClient">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="1200.0" style="-fx-background-color: gray;">
+         <children>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="522.0" layoutY="441.0" mnemonicParsing="false" onAction="#setButtonBack" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Назад" />
+            <Button id="buttonEdit" fx:id="buttonEdit" layoutX="375.0" layoutY="441.0" mnemonicParsing="false" onAction="#setButtonEdit" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Редактировать" />
+            <Label layoutX="42.0" layoutY="298.0" text="Имя">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="581.0" layoutY="295.0" text="Услуга">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="255.0" text="Дата">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="338.0" text="Телефон">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="text_name" fx:id="text_name" layoutX="113.0" layoutY="293.0" />
+            <TextField id="text_date" fx:id="text_date" layoutX="375.0" layoutY="250.0" prefHeight="26.0" prefWidth="158.0" />
+            <TextField id="text_phone" fx:id="text_phone" layoutX="112.0" layoutY="333.0" prefHeight="26.0" prefWidth="150.0" />
+            <TableView id="table" fx:id="table" layoutX="42.0" layoutY="34.0" prefHeight="198.0" prefWidth="736.0">
+              <columns>
+                  <TableColumn id="firstnameColumn" fx:id="firstnameColumn" prefWidth="100.0" style="-fx-background-color: mistyrose;" text="Фамилия" />
+                <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="100.0" style="-fx-background-color: mistyrose;" text="Имя" />
+                  <TableColumn id="serviceColumn" fx:id="serviceColumn" prefWidth="118.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                  <TableColumn id="dateColumn" fx:id="dateColumn" prefWidth="114.0" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn fx:id="timeColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Время" />
+                  <TableColumn id="phoneColumn" fx:id="phoneColumn" prefWidth="110.0" style="-fx-background-color: mistyrose;" text="Телефон" />
+                  <TableColumn fx:id="masterNameColumn" prefWidth="118.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+              </columns>
+            </TableView>
+            <ComboBox id="text_service" fx:id="text_service" layoutX="645.0" layoutY="303.0" prefHeight="26.0" prefWidth="143.0" />
+            <Label layoutX="42.0" layoutY="255.0" text="Фамилия">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_firstname" layoutX="113.0" layoutY="250.0" />
+            <TextField id="text_date" fx:id="text_time" layoutX="375.0" layoutY="293.0" prefHeight="26.0" prefWidth="158.0" />
+            <ComboBox fx:id="text_masterName" layoutX="642.0" layoutY="247.0" prefHeight="26.0" prefWidth="143.0" />
+            <Label layoutX="308.0" layoutY="298.0" text="Время">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="581.0" layoutY="255.0" text="Мастер">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</GridPane>

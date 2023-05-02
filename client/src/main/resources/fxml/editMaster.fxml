@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="master.ControllerForEditMaster">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: Gray;">
+         <children>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="522.0" layoutY="441.0" mnemonicParsing="false" onAction="#setButtonBack" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Назад" />
+            <Button id="buttonEdit" fx:id="buttonEdit" layoutX="360.0" layoutY="441.0" mnemonicParsing="false" onAction="#setButtonEdit" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Редактировать" />
+            <Label layoutX="96.0" layoutY="287.0" text="Имя" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="324.0" text="Фамилия" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="362.0" text="Стаж" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="287.0" text="Зарплата" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="text_name" fx:id="text_name" layoutX="163.0" layoutY="282.0" />
+            <TextField id="text_surname" fx:id="text_surname" layoutX="163.0" layoutY="318.0" />
+            <TextField id="text_experience" fx:id="text_experience" layoutX="163.0" layoutY="357.0" />
+            <TextField id="text_salary" fx:id="text_salary" layoutX="458.0" layoutY="282.0" />
+            <TableView id="table" fx:id="table" layoutX="94.0" layoutY="38.0" prefHeight="227.0" prefWidth="535.0">
+              <columns>
+                <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="113.0" style="-fx-background-color: mistyrose;" text="Имя" />
+                  <TableColumn id="surnameColumn" fx:id="surnameColumn" prefWidth="141.0" style="-fx-background-color: mistyrose;" text="Фамилия" />
+                  <TableColumn id="experienceColumn" fx:id="experienceColumn" prefWidth="55.0" style="-fx-background-color: mistyrose;" text="Стаж" />
+                  <TableColumn id="salaryColumn" fx:id="salaryColumn" prefWidth="110.0" style="-fx-background-color: mistyrose;" text="Зарплата" />
+                  <TableColumn id="fieldColumn" fx:id="fieldColumn" prefWidth="119.0" style="-fx-background-color: mistyrose;" text="Сфера" />
+              </columns>
+            </TableView>
+            <Label layoutX="380.0" layoutY="332.0" text="Сфера" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="text_field" layoutX="457.0" layoutY="327.0" prefWidth="150.0" />
+         </children></AnchorPane>
+   </children>
+</GridPane>

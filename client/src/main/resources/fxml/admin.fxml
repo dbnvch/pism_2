@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="427.0" prefWidth="817.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.ControllerAdmin">
+    <children>
+      <AnchorPane prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: gray;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="32.0" text="Администратор" textAlignment="CENTER" textFill="#ffffffba">
+               <font>
+                  <Font name="Dubai Medium" size="24.0" />
+               </font>
+            </Label>
+            <Button id="buttonAddMaster" fx:id="buttonAddMaster" layoutX="225.0" layoutY="184.0" mnemonicParsing="false" onAction="#setButtonAddMaster" prefHeight="31.0" prefWidth="122.0" text="Добавить" />
+            <Button id="buttonRemoveMaster" fx:id="buttonRemoveMaster" layoutX="225.0" layoutY="262.0" mnemonicParsing="false" onAction="#setButtonRemoveMaster" prefHeight="31.0" prefWidth="122.0" text="Удалить" />
+            <Button id="buttonEditMaster" fx:id="buttonEditMaster" layoutX="225.0" layoutY="224.0" mnemonicParsing="false" onAction="#setButtonEditMaster" prefHeight="31.0" prefWidth="122.0" text="Редактировать" />
+            <Label layoutX="249.0" layoutY="111.0" text="Мастера" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="437.0" layoutY="111.0" text="Услуги" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button id="buttonAddService" fx:id="buttonAddService" layoutX="415.0" layoutY="184.0" mnemonicParsing="false" onAction="#setButtonAddService" prefHeight="31.0" prefWidth="122.0" text="Добавить" />
+            <Button id="buttonEditService" fx:id="buttonEditService" layoutX="415.0" layoutY="224.0" mnemonicParsing="false" onAction="#setButtonEditService" prefHeight="31.0" prefWidth="122.0" text="Редактировать" />
+            <Button id="buttonRemoveService" fx:id="buttonRemoveService" layoutX="415.0" layoutY="262.0" mnemonicParsing="false" onAction="#setButtonRemoveService" prefHeight="31.0" prefWidth="122.0" text="Удалить" />
+            <Button id="buttonShowService" fx:id="buttonShowService" layoutX="415.0" layoutY="301.0" mnemonicParsing="false" onAction="#setButtonShowService" prefHeight="31.0" prefWidth="122.0" text="Просмотреть" />
+            <Button id="buttonShowMaster" fx:id="buttonShowMaster" layoutX="225.0" layoutY="301.0" mnemonicParsing="false" onAction="#setButtonShowMaster" prefHeight="31.0" prefWidth="122.0" text="Просмотреть" />
+            <Label layoutX="640.0" layoutY="111.0" lineSpacing="1.0" text="Клиенты" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button id="buttonAddClient" fx:id="buttonAddClient" layoutX="615.0" layoutY="184.0" mnemonicParsing="false" onAction="#setButtonAddClient" prefHeight="31.0" prefWidth="122.0" text="Добавить" />
+            <Button id="buttonEditClient" fx:id="buttonEditClient" layoutX="615.0" layoutY="224.0" mnemonicParsing="false" onAction="#setButtonEditClient" prefHeight="31.0" prefWidth="122.0" text="Редактировать" />
+            <Button fx:id="buttonRemoveClient" layoutX="615.0" layoutY="262.0" mnemonicParsing="false" onAction="#setButtonRemoveClient" prefHeight="31.0" prefWidth="122.0" text="Удалить" />
+            <Button id="buttonShowClient" fx:id="buttonShowClient" layoutX="615.0" layoutY="301.0" mnemonicParsing="false" onAction="#setButtonShowClient" prefHeight="31.0" prefWidth="122.0" text="Просмотреть" />
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="14.0" layoutY="376.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="122.0" style="-fx-background-color: Pink;" text="Назад" textFill="WHITE" />
+            <Button id="buttonCreateReport" fx:id="buttonCreateReport" layoutX="604.0" layoutY="360.0" mnemonicParsing="false" onAction="#setbuttonCreateReport" prefHeight="31.0" prefWidth="173.0" text="Создать отчет" />
+            <Button id="buttonDiagram" fx:id="buttonDiagram" layoutX="352.0" layoutY="360.0" mnemonicParsing="false" onAction="#setButtonDiagram" prefHeight="31.0" prefWidth="232.0" text="Диаграмма популярности услуг" />
+            <Button id="buttonAddMaster" fx:id="buttonAddShedule" layoutX="42.0" layoutY="184.0" mnemonicParsing="false" onAction="#setButtonAddShedule" prefHeight="31.0" prefWidth="122.0" text="Добавить" />
+            <Button id="buttonEditMaster" fx:id="buttonEditShedule" layoutX="42.0" layoutY="224.0" mnemonicParsing="false" onAction="#setButtonEditShedule" prefHeight="31.0" prefWidth="122.0" text="Редактировать" />
+            <Button id="buttonRemoveMaster" fx:id="buttonRemoveShedule" layoutX="42.0" layoutY="262.0" mnemonicParsing="false" onAction="#setButtonRemoveShedule" prefHeight="31.0" prefWidth="122.0" text="Удалить" />
+            <Button id="buttonShowMaster" fx:id="buttonShowShedule" layoutX="42.0" layoutY="301.0" mnemonicParsing="false" onAction="#setButtonShowShedule" prefHeight="31.0" prefWidth="122.0" text="Просмотреть" />
+            <Separator layoutX="49.0" layoutY="148.0" opacity="0.4" prefHeight="0.0" prefWidth="758.0" />
+            <Label layoutX="50.0" layoutY="111.0" text="Расписание" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

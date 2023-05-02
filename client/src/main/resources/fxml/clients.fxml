@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Clients">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: gray;">
+         <children>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="734.0" layoutY="443.0" mnemonicParsing="false" onAction="#setButtonBack" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Назад" textFill="WHITE" />
+            <TableView id="table" fx:id="table" layoutX="21.0" layoutY="14.0" prefHeight="393.0" prefWidth="859.0">
+              <columns>
+                  <TableColumn fx:id="surnameColumn" prefWidth="124.0" style="-fx-background-color: mistyrose;" text="Фамилия" />
+                <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="123.0" style="-fx-background-color: mistyrose;" text="Имя" />
+                  <TableColumn id="serviceColumn" fx:id="serviceColumn" prefWidth="133.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                  <TableColumn id="dateColumn" fx:id="dateColumn" prefWidth="125.0" style="-fx-background-color: mistyrose;"  text="Дата" />
+                  <TableColumn fx:id="timeColumn" prefWidth="108.0" style="-fx-background-color: mistyrose;" text="Время" />
+                  <TableColumn id="phoneColumn" fx:id="phoneColumn" prefWidth="98.0" style="-fx-background-color: mistyrose;" text="Телефон" />
+                  <TableColumn fx:id="masterNameColumn" prefWidth="151.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</GridPane>

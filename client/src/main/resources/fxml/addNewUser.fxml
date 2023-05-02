@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ControllerForAddUser">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+      <AnchorPane prefHeight="528.0" prefWidth="810.0" style="-fx-background-color: Gray;">
+         <children>
+            <Label layoutX="268.0" layoutY="14.0" prefHeight="23.0" prefWidth="274.0" text="Добавить нового клиента" textFill="#fcf9f9">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Label>
+            <ComboBox id="text_service" fx:id="text_service" layoutX="43.0" layoutY="268.0" onAction="#setFilterService" prefHeight="31.0" prefWidth="187.0" />
+            <Label layoutX="42.0" layoutY="235.0" text="Поиск процедуры" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Button id="buttonSubmit" fx:id="buttonSubmit" layoutX="425.0" layoutY="477.0" mnemonicParsing="false" onAction="#setbuttonSubmit" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: Pink;" text="Записаться">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="504.0" layoutY="51.0" text="Места" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="639.0" layoutY="477.0" mnemonicParsing="false" onAction="#setbuttonBack" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: Pink;" text="Назад">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="table" layoutX="362.0" layoutY="85.0" prefHeight="200.0" prefWidth="360.0">
+              <columns>
+                <TableColumn fx:id="serviceColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                <TableColumn fx:id="masterColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+                  <TableColumn fx:id="dateColumn" prefWidth="119.0" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn fx:id="timeColumn" prefWidth="90.0" style="-fx-background-color: mistyrose;" text="Время" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableUser" layoutX="53.0" layoutY="85.0" prefHeight="70.0" prefWidth="231.0">
+              <columns>
+                <TableColumn fx:id="surnameColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Фамилия" />
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Имя" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Телефон" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableBooking" layoutX="363.0" layoutY="300.0" prefHeight="153.0" prefWidth="360.0">
+               <columns>
+                  <TableColumn fx:id="serviceBookongColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                  <TableColumn fx:id="masterBooikingColumn" prefWidth="100.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+                  <TableColumn fx:id="dateBookingColumn" prefWidth="90.0" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn fx:id="timeBookingColumn" prefWidth="94.0" style="-fx-background-color: mistyrose;" text="Время" />
+               </columns>
+            </TableView>
+            <Button id="buttonSubmit" fx:id="buttonShowPrice" layoutX="43.0" layoutY="313.0" mnemonicParsing="false" onAction="#setButtonShowPrice" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: Pink;" text="Прайс">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+             <Label layoutX="5.0" layoutY="500.0" fx:id="discountLabel" textFill="WHITE">
+                 <font>
+                     <Font name="Arial" size="20.0" />
+                 </font>
+             </Label>
+         </children></AnchorPane>
+</GridPane>

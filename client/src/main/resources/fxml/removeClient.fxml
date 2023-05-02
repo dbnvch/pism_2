@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ControllerForRemoveClient">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: Gray;">
+         <children>
+            <Button id="buttonBack" fx:id="buttonBack" layoutX="722.0" layoutY="444.0" mnemonicParsing="false" onAction="#setButtonBack" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Назад" />
+            <Button id="buttonRemove" fx:id="buttonRemove" layoutX="553.0" layoutY="444.0" mnemonicParsing="false" onAction="#setButtonRemove" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: Pink;" text="Удалить" />
+            <TableView id="table" fx:id="table" layoutX="44.0" layoutY="34.0" prefHeight="384.0" prefWidth="787.0">
+              <columns>
+                  <TableColumn fx:id="firstnameColumn" prefWidth="175.0" style="-fx-background-color: mistyrose;" text="Фамилия" />
+                <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="145.0" style="-fx-background-color: mistyrose;" text="Имя" />
+                  <TableColumn id="serviceColumn" fx:id="serviceColumn" prefWidth="155.0" style="-fx-background-color: mistyrose;" text="Услуга" />
+                  <TableColumn id="dateColumn" fx:id="dateColumn" prefWidth="123.0" style="-fx-background-color: mistyrose;" text="Дата" />
+                  <TableColumn id="phoneColumn" fx:id="phoneColumn" prefWidth="110.0" style="-fx-background-color: mistyrose;" text="Телефон" />
+                  <TableColumn fx:id="masterNameColumn" prefWidth="75.0" style="-fx-background-color: mistyrose;" text="Мастер" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</GridPane>
